@@ -19,33 +19,36 @@ struct ContentView: View {
   var body: some View {
     NavigationView {
       
-    List {
-      ForEach(recipes) { recipe in
-        //              Text("Recipe name: \(recipe.name! )")
-        RecipeCell(recipe: recipe)
+      List {
+        ForEach(recipes) { recipe in
+          //              Text("Recipe name: \(recipe.name! )")
+          RecipeCell(recipe: recipe)
+        }
+        //      .onMove(perform: moveRecipes)
+        .onDelete(perform: deleteRecipes)
+        HStack {
+          Spacer()
+          Text("\(recipes.count) recipes")
+            .foregroundColor(.secondary)
+          Spacer()
+        }
       }
-//      .onMove(perform: moveRecipes)
-      .onDelete(perform: deleteRecipes)
-      HStack {
-        Spacer()
-        Text("\(recipes.count) recipes")
-          .foregroundColor(.secondary)
-        Spacer()
+      .navigationTitle("Recipes")
+      .toolbar{
+        ToolbarItem(placement: .automatic) {
+          Button(action: makeRecipe) {
+            Label("Add Recipe", systemImage: "plus")
+          }
+        }
+        #if os(iOS)
+        ToolbarItem(placement: .navigationBarLeading) {
+          EditButton()
+        }
+        #endif
       }
     }
-    .navigationTitle("Recipes")
-    
-    Button(action: makeRecipe) {
-      Label("Add Item", systemImage: "plus")
-    }
-    }
-    //        .toolbar {
-    ////            #if os(iOS)
-    ////            EditButton()
-    ////            #endif
-    //
-    //        }
   }
+  
   
   private func makeRecipe() {
     withAnimation {
@@ -58,7 +61,7 @@ struct ContentView: View {
       newRecipe.ingredients = "Powdered milk"
       newRecipe.isMyFavorite = false
       newRecipe.lovedBy = "All"
-      newRecipe.name = "Elixir of life"
+      newRecipe.name = "White nectar"
       newRecipe.prepTime = 0
       newRecipe.rating = 2
       newRecipe.recipeDescription = "Place in big tupperware container, and stir"
@@ -77,11 +80,11 @@ struct ContentView: View {
       }
     }
   }
-//  func moveRecipes(from: IndexSet, to: Int) {
-//    withAnimation {
-//      recipes.move(fromOffsets: from, toOffset: to)
-//    }
-//  }
+  //  func moveRecipes(from: IndexSet, to: Int) {
+  //    withAnimation {
+  //      recipes.move(fromOffsets: from, toOffset: to)
+  //    }
+  //  }
   
   private func deleteRecipes(offsets: IndexSet) {
     withAnimation {

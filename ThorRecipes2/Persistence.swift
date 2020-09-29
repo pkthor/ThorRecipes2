@@ -38,5 +38,7 @@ struct PersistenceController {
                 fatalError("Unresolved error \(error), \(error.userInfo)")
             }
         })
+      container.viewContext.automaticallyMergesChangesFromParent = true
+      container.viewContext.mergePolicy = NSMergeByPropertyStoreTrumpMergePolicy //source of truth is CloudKit over phone/iPad
     }
 }
