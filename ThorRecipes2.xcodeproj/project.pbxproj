@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		43A94D8C252370F400197CA0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43A94D8B252370F400197CA0 /* Preview Assets.xcassets */; };
 		43A94D8E252370F400197CA0 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A94D8D252370F400197CA0 /* Persistence.swift */; };
 		43A94D91252370F400197CA0 /* ThorRecipes2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 43A94D8F252370F400197CA0 /* ThorRecipes2.xcdatamodeld */; };
+		43A94D9C2523711200197CA0 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A94D9B2523711200197CA0 /* CloudKit.framework */; };
+		43A94DA82523803800197CA0 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A94DA72523803800197CA0 /* RecipeCell.swift */; };
+		43A94DAB2523816000197CA0 /* RecipeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A94DAA2523816000197CA0 /* RecipeDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,10 @@
 		43A94D8D252370F400197CA0 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		43A94D90252370F400197CA0 /* ThorRecipes2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ThorRecipes2.xcdatamodel; sourceTree = "<group>"; };
 		43A94D92252370F400197CA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43A94D992523710F00197CA0 /* ThorRecipes2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ThorRecipes2.entitlements; sourceTree = "<group>"; };
+		43A94D9B2523711200197CA0 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		43A94DA72523803800197CA0 /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		43A94DAA2523816000197CA0 /* RecipeDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43A94D9C2523711200197CA0 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +50,7 @@
 			children = (
 				43A94D83252370F400197CA0 /* ThorRecipes2 */,
 				43A94D82252370F400197CA0 /* Products */,
+				43A94D9A2523711200197CA0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +67,13 @@
 			children = (
 				43A94D84252370F400197CA0 /* ThorRecipes2App.swift */,
 				43A94D86252370F400197CA0 /* ContentView.swift */,
+				43A94DA72523803800197CA0 /* RecipeCell.swift */,
+				43A94DAA2523816000197CA0 /* RecipeDetail.swift */,
 				43A94D88252370F400197CA0 /* Assets.xcassets */,
 				43A94D8D252370F400197CA0 /* Persistence.swift */,
 				43A94D92252370F400197CA0 /* Info.plist */,
 				43A94D8F252370F400197CA0 /* ThorRecipes2.xcdatamodeld */,
+				43A94D992523710F00197CA0 /* ThorRecipes2.entitlements */,
 				43A94D8A252370F400197CA0 /* Preview Content */,
 			);
 			path = ThorRecipes2;
@@ -73,6 +85,14 @@
 				43A94D8B252370F400197CA0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		43A94D9A2523711200197CA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43A94D9B2523711200197CA0 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,7 +130,7 @@
 				};
 			};
 			buildConfigurationList = 43A94D7C252370F400197CA0 /* Build configuration list for PBXProject "ThorRecipes2" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -144,9 +164,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43A94DA82523803800197CA0 /* RecipeCell.swift in Sources */,
 				43A94D8E252370F400197CA0 /* Persistence.swift in Sources */,
 				43A94D87252370F400197CA0 /* ContentView.swift in Sources */,
 				43A94D85252370F400197CA0 /* ThorRecipes2App.swift in Sources */,
+				43A94DAB2523816000197CA0 /* RecipeDetail.swift in Sources */,
 				43A94D91252370F400197CA0 /* ThorRecipes2.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +297,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ThorRecipes2/ThorRecipes2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ThorRecipes2/Preview Content\"";
 				DEVELOPMENT_TEAM = P7N73XRW62;
@@ -297,6 +320,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ThorRecipes2/ThorRecipes2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ThorRecipes2/Preview Content\"";
 				DEVELOPMENT_TEAM = P7N73XRW62;
