@@ -21,10 +21,8 @@ struct ContentView: View {
       
       List {
         ForEach(recipes) { recipe in
-          //              Text("Recipe name: \(recipe.name! )")
           RecipeCell(recipe: recipe)
         }
-        //      .onMove(perform: moveRecipes)
         .onDelete(perform: deleteRecipes)
         HStack {
           Spacer()
@@ -56,12 +54,15 @@ struct ContentView: View {
       newRecipe.category = "Dessert"
       newRecipe.cookTime = 30
       newRecipe.difficulty = 3
-      newRecipe.directions = "Just add water"
+      newRecipe.directions = """
+        Just add water
+        Stir
+        """
       newRecipe.familyInfo = "It's a family favorite"
       newRecipe.ingredients = "Powdered milk"
       newRecipe.isMyFavorite = false
       newRecipe.lovedBy = "All"
-      newRecipe.name = "White nectar"
+      newRecipe.name = "Red nectar"
       newRecipe.prepTime = 0
       newRecipe.rating = 2
       newRecipe.recipeDescription = "Place in big tupperware container, and stir"
@@ -70,8 +71,8 @@ struct ContentView: View {
       newRecipe.sourceNotes = "A favorite chore after you finished washing the dishes"
       newRecipe.submittedBy = "Kurt"
       newRecipe.totalTime = 4
-      
-      
+
+
       do {
         try viewContext.save()
       } catch {

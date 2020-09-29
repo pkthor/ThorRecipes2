@@ -16,6 +16,8 @@
 		43A94D9C2523711200197CA0 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A94D9B2523711200197CA0 /* CloudKit.framework */; };
 		43A94DA82523803800197CA0 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A94DA72523803800197CA0 /* RecipeCell.swift */; };
 		43A94DAB2523816000197CA0 /* RecipeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A94DAA2523816000197CA0 /* RecipeDetail.swift */; };
+		43A94DB325238C5800197CA0 /* AddRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A94DB225238C5800197CA0 /* AddRecipeView.swift */; };
+		43A94DB62523946100197CA0 /* BOMicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A94DB52523946100197CA0 /* BOMicon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		43A94D9B2523711200197CA0 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		43A94DA72523803800197CA0 /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
 		43A94DAA2523816000197CA0 /* RecipeDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeDetail.swift; sourceTree = "<group>"; };
+		43A94DB225238C5800197CA0 /* AddRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipeView.swift; sourceTree = "<group>"; };
+		43A94DB52523946100197CA0 /* BOMicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BOMicon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,11 +74,13 @@
 				43A94DA72523803800197CA0 /* RecipeCell.swift */,
 				43A94DAA2523816000197CA0 /* RecipeDetail.swift */,
 				43A94D88252370F400197CA0 /* Assets.xcassets */,
+				43A94DB52523946100197CA0 /* BOMicon.png */,
 				43A94D8D252370F400197CA0 /* Persistence.swift */,
 				43A94D92252370F400197CA0 /* Info.plist */,
 				43A94D8F252370F400197CA0 /* ThorRecipes2.xcdatamodeld */,
 				43A94D992523710F00197CA0 /* ThorRecipes2.entitlements */,
 				43A94D8A252370F400197CA0 /* Preview Content */,
+				43A94DB225238C5800197CA0 /* AddRecipeView.swift */,
 			);
 			path = ThorRecipes2;
 			sourceTree = "<group>";
@@ -154,6 +160,7 @@
 			files = (
 				43A94D8C252370F400197CA0 /* Preview Assets.xcassets in Resources */,
 				43A94D89252370F400197CA0 /* Assets.xcassets in Resources */,
+				43A94DB62523946100197CA0 /* BOMicon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43A94DB325238C5800197CA0 /* AddRecipeView.swift in Sources */,
 				43A94DA82523803800197CA0 /* RecipeCell.swift in Sources */,
 				43A94D8E252370F400197CA0 /* Persistence.swift in Sources */,
 				43A94D87252370F400197CA0 /* ContentView.swift in Sources */,
