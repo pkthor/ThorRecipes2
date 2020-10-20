@@ -12,9 +12,11 @@ struct RecipeCell: View {
   var recipe: Recipe
   var body: some View {
     NavigationLink(destination: RecipeDetail(recipe: recipe)) {
-      Image(systemName: "photo")
+      Image("BOMicon")
+        .resizable()
         .cornerRadius(8)
-      
+        .frame(width: 50, height: 50, alignment: .center)
+        .padding()
       VStack(alignment: .leading) {
         Text(recipe.name!)
           .font(.headline)

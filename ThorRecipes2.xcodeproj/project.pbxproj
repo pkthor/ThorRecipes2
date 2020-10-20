@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4385E180253D0E030027D594 /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4385E17F253D0E030027D594 /* StarRatingView.swift */; };
 		43A94D85252370F400197CA0 /* ThorRecipes2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A94D84252370F400197CA0 /* ThorRecipes2App.swift */; };
 		43A94D87252370F400197CA0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A94D86252370F400197CA0 /* ContentView.swift */; };
 		43A94D89252370F400197CA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43A94D88252370F400197CA0 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4385E17F253D0E030027D594 /* StarRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
 		43A94D81252370F400197CA0 /* ThorRecipes2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThorRecipes2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43A94D84252370F400197CA0 /* ThorRecipes2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThorRecipes2App.swift; sourceTree = "<group>"; };
 		43A94D86252370F400197CA0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +75,8 @@
 				43A94D86252370F400197CA0 /* ContentView.swift */,
 				43A94DA72523803800197CA0 /* RecipeCell.swift */,
 				43A94DAA2523816000197CA0 /* RecipeDetail.swift */,
+				43A94DB225238C5800197CA0 /* AddRecipeView.swift */,
+				4385E17F253D0E030027D594 /* StarRatingView.swift */,
 				43A94D88252370F400197CA0 /* Assets.xcassets */,
 				43A94DB52523946100197CA0 /* BOMicon.png */,
 				43A94D8D252370F400197CA0 /* Persistence.swift */,
@@ -80,7 +84,6 @@
 				43A94D8F252370F400197CA0 /* ThorRecipes2.xcdatamodeld */,
 				43A94D992523710F00197CA0 /* ThorRecipes2.entitlements */,
 				43A94D8A252370F400197CA0 /* Preview Content */,
-				43A94DB225238C5800197CA0 /* AddRecipeView.swift */,
 			);
 			path = ThorRecipes2;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43A94DB325238C5800197CA0 /* AddRecipeView.swift in Sources */,
+				4385E180253D0E030027D594 /* StarRatingView.swift in Sources */,
 				43A94DA82523803800197CA0 /* RecipeCell.swift in Sources */,
 				43A94D8E252370F400197CA0 /* Persistence.swift in Sources */,
 				43A94D87252370F400197CA0 /* ContentView.swift in Sources */,
