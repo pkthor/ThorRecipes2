@@ -45,8 +45,8 @@ struct PersistenceController {
     }
     description.setOption(true as NSNumber, forKey: NSPersistentHistoryTrackingKey)
     description.setOption(true as NSNumber, forKey: NSPersistentStoreRemoteChangeNotificationPostOptionKey)
-//    description.cloudKitContainerOptions?.databaseScope = .public
-    description.cloudKitContainerOptions?.databaseScope = .private
+    description.cloudKitContainerOptions?.databaseScope = .public
+//    description.cloudKitContainerOptions?.databaseScope = .private
     
 //
 //    ////////////////////////////// for multiple persistent stores
